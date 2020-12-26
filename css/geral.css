@@ -1,0 +1,336 @@
+@font-face{
+    font-family: "Ubuntu Mono";
+    src: url("../assets/font/UbuntuMono-Regular.ttf") format('truetype');
+}
+@font-face{
+    font-family: "Ubuntu";
+    src: url("../assets/font/Ubuntu-Light.ttf") format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+button{
+    border: 0;
+}
+
+body{
+    margin: 0 auto;
+}
+
+p, h1, h2, button, a, textarea {
+    font-family: Ubuntu,'Courier New', Courier, monospace;
+    color: #111111;
+}
+
+header{
+    background-image: url("../assets/img/hero-bg-original.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.container .unect-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0 85px -6px;
+}
+
+.container .unect-icon p{
+    font-size: 16px;
+    font-color: #111111;
+    opacity: 50%;
+    font-family: "Ubuntu Mono";
+    font-weight: 400;
+}
+
+.container .unect-icon img{
+    height: 54;
+}
+
+.container .unect-icon *{
+    padding: 7px;
+}
+
+.container .header-inscricoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .header-inscricoes .inscricoes-info h1{
+    font-size: 34px;
+    line-height: 48px;
+    margin: 0 0 10px 0;
+}
+
+.container .header-inscricoes .inscricoes-info p{
+    font-size: 20px;
+    line-height: 22.98px;
+    font-style: bold;
+
+    color: rgba(17, 17, 17, 0.5);
+}
+
+.container .header-inscricoes .inscricoes-info span{
+    color: #226ED8;
+}
+
+.container .header-inscricoes .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header-inscricoes .redes-sociais img{
+    margin: 0 0 10px 0;
+}
+
+.container .header-inscreva{
+    margin: 35px 0 100px -3px;
+}
+
+.container .header-inscreva button{
+    background-color: #226ED8;
+    border-radius: 25px;
+    height: 45px;
+    width: 137px;
+
+    outline: none;
+
+    font-size: 18px;
+    color: #F6F7F9;
+}
+
+.container .header-inscreva button:hover{
+    opacity: 85%;
+}
+
+
+.container .header-inscreva a{
+    font-size: 18px;
+    color: #226ED8;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container .header-inscreva a:hover{
+    text-decoration: underline;
+}
+
+/* Sobre */
+
+.container-content{
+    
+    background-color: #FDFDFD;
+}
+
+.sobre{
+    display: flex;
+    display: row;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+
+.sobre .sobre-info h2{
+    font-size: 30px;
+    margin: 80px 0 32px 0;
+}
+
+.sobre .sobre-info .sobre-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sobre .sobre-info .sobre-content p{
+    border-radius: 0 7px 7px 0px ;
+    align-items: stretch;
+    font-size: 16px;
+    line-height: 25px;
+    background-color: #F2F3F4;
+    max-width: 500px;
+    padding: 40px;
+}
+.sobre .sobre-info .sobre-content img{
+    width: 347px;
+}
+.sobre  .interrogacao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.sobre  .interrogacao img{
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+}
+
+/* Vagas */
+
+.vagas{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    display: row;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    margin-top: 75px;
+}
+
+.vagas .vagas-title{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.vagas-blocos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.vagas-blocos p{
+    max-width: 290px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.vagas-blocos h1{
+    font-size: 22px;
+    color: #226ED8;
+}
+
+.vagas-blocos h2{
+    font-size: 22px;
+    color: rgba(63, 61, 86, 0.5);
+}
+
+.vagas-blocos .diretorias-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.vagas-blocos .diretorias-title img{
+    background-size: contain;
+}
+
+.vagas-blocos .diretorias-title *{
+    margin: 0 10px 14px 0px;
+}
+
+.vagas-blocos section{
+    padding: 0 20px 50px 0;
+}
+
+/* Alumni */
+
+.alumni{
+    border-top: 1px solid #E6E6E6;
+}
+
+.alumni-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.alumni-content h1{
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.alumni-content .logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: #171717;
+    padding-top: 70px;
+    padding-bottom: 200px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content .redes-sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-content .redes-sociais *{
+    margin-right: 10px;
+}
+
+.footer-content .redes-sociais p{
+    margin-left: 20px;
+    font-size: 15px;
+    color: #FDFDFD;
+}
+
+.footer-content .contato{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content .contato *{
+    margin-left: 20px;
+}
+
+.footer-content .contato p{
+    font-size: 15px;
+    color: #FDFDFD;
+}
+
+.footer-content .contato hr{
+    height: 0px;
+    width: 50px;
+    border: 1px solid rgba(253, 253, 253, 0.3);
+    transform: rotate(-180deg);
+    margin: auto;
+    margin-left: 20px;
+}
