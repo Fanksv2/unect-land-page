@@ -20,6 +20,15 @@ send.addEventListener("click", () => {
 cancel.addEventListener("click", () => {
     desactivateModal();
 });
+
+modal.addEventListener("click", (event) => {
+
+    if(event.target != modal)
+        return;
+
+    desactivateModal();
+});
+
 subscribe.addEventListener("click", () => {
     activateModal();
 });
