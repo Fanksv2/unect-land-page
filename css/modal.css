@@ -19,9 +19,9 @@
 }
 
 .modal-container{
+    display: flex;
     background-color: white;
     min-width: 340px;
-    display: flex;
     flex-direction: column;
     border: 1px solid #ECECEC;
     border-radius: 6px;

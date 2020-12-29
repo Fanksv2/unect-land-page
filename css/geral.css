@@ -15,6 +15,7 @@
     box-sizing: border-box;
 }
 
+
 button{
     border: 0;
 }
@@ -377,4 +378,17 @@ header{
     .footer-content div{
         margin-bottom: 20px;
     }
+}
+
+/* Animacao */
+
+.js-animate{
+    opacity: 0;
+    transform: translate(-30px, 0);
+}
+
+.animado{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 0.25s;
 }
