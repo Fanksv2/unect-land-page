@@ -1,7 +1,7 @@
 
 const send = document.querySelector(".send");
 const cancel = document.querySelector(".cancel");
-const subscribe = document.querySelector(".header-inscreva button")
+const interButton = document.querySelector(".interrogacao")
 const modal = document.querySelector(".modal")
 
 function activateModal(){
@@ -29,8 +29,8 @@ modal.addEventListener("click", (event) => {
     desactivateModal();
 });
 
-subscribe.addEventListener("click", () => {
+interButton.addEventListener("click", () => {
     activateModal();
 });
 
-subscribe.addEventListener("click", () => activateModal);
+interButton.addEventListener("click", () => activateModal);
